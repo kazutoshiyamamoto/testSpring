@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import Spring
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var springImageView: SpringImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.springImageView.image = UIImage(named: "test")
     }
-
-
 }
 
